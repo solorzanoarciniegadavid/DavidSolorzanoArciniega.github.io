@@ -3,8 +3,11 @@
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
 <body style='margin : 0px; overflow: hidden;'>
 	<a-scene embedded arjs='sourceType: webcam;'>
-		<a-text value="Hello, World!"></a-text>
-		<a-image src="https://lh3.googleusercontent.com/25fl1Z65sveRPHQ_yZ0j1vxBAhN1ABcdI1gfcYIZED0rXf97YIvGAIOzm9LUuzCnFA9_Kg=s87"></a-image>
-		<a-marker-camera preset='hiro'></a-marker-camera>
+		<!-- define your gltf asset -->
+		<a-assets>
+  			<a-asset-item id="tree" src="scene.gltf"></a-asset-item>
+		</a-assets>
+			<!-- use your gltf model -->
+<a-entity gltf-model="##tree"></a-entity>
 	</a-scene>
 </body>
