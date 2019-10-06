@@ -55,7 +55,7 @@
         </script>
         <script>
             (function(){
-                emailjs.init("<YOUR USER ID>");
+                emailjs.init("user_B3BB3d8FBITpWUyUpnU8q");
              })();
             const vue = new Vue({
                 el: '#app',
@@ -76,7 +76,7 @@
                             subject: this.subject,
                         };
                         
-                        emailjs.send("<YOUR SERVICE ID>","<YOUR TEMPLATE ID>", data)
+                        emailjs.send("gmaildavid","template_qrxNcewW", data)
                         .then(function(response) {
                             if(response.text === 'OK'){
                                 alert('El correo se ha enviado de forma exitosa');
