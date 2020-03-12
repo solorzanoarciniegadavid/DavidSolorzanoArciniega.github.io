@@ -16,6 +16,10 @@ html {
 	}
 }
 
+a{
+text-decoration: none;
+}
+
 @media (min-width: 992px) {
 	html {
 		font-size: 18px;
