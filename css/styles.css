@@ -15,9 +15,12 @@ html {
 		font-size: 16px;
 	}
 }
-
-a{
+.liga {
 text-decoration: none;
+color: black;
+}
+.liga:hover {
+color: grey;
 }
 
 @media (min-width: 992px) {
