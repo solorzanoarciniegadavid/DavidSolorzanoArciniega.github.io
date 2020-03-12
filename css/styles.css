@@ -23,6 +23,11 @@ color: black;
 color: grey;
 }
 
+header {
+  padding: 15px;	
+	
+}
+
 @media (min-width: 992px) {
 	html {
 		font-size: 18px;
